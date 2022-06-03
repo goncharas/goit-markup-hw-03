@@ -336,7 +336,7 @@ body {
     margin-bottom: 50px;
 }
 .list-button-portfolio:not(:last-child) {
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .filter-button-portfolio {
