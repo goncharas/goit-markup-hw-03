@@ -20,9 +20,8 @@ body {
 .link {
     text-decoration: none;
 }
-.section{
+.section {
     padding: 94px 0px 94px 0px;
-    max-width: 1600px;
 }
 .visually-hidden {
     position: absolute;
@@ -36,7 +35,7 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-.container{
+.container {
     width: 1200px;
     margin: 0px auto;
     padding-right: 15px;
@@ -47,16 +46,14 @@ body {
 /*----------------------Header---------------------*/
 .header {
     border: 1px solid #ececec;
-    max-width: 1600px;
 }
-.heder-div{
+.heder-div {
     display: flex;
+    align-items: center;
 }
-.heder-nav{
-    width: 145px;
-    margin-right: 93px;
-    margin-top: 24px;
-    margin-bottom: 25px;
+.heder-nav {
+    display: flex;
+    align-items: center;
 }
 
 /*-------------------Header logo--------------------*/
@@ -69,18 +66,19 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-right: 93px;
 }
 .accent {
     color: var(--title-text-color);
 }
 /*-------------------Header navigation--------------------*/
 .navigation-list {
-    width: 293px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-right: 332px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.navigation-item:not(:last-child) {
+    margin-right: 50px;
 }
 .navigation-link {
     font-weight: 500;
@@ -97,13 +95,9 @@ body {
     cursor: pointer;
 }
 /*-------------------Heder contact--------------------*/
-.contact-list{
-    width: 307px;
+.contact-list {
     display: flex;
-    justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    
+    margin-left: auto;
 }
 .contact-link {
     font-weight: 500;
@@ -117,13 +111,16 @@ body {
     color: var(--accent-color);
     cursor: pointer;
 }
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 /*-------------------Hero--------------------*/
 
-.hero{
+.hero {
     background-color: var(--secondary-background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-titel {
     font-weight: 900;
@@ -137,13 +134,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    padding-top: 200px;
 }
 .button {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 200px;
-    
+
     display: block;
     border-radius: 4px;
     padding: 10px 32px;
@@ -172,16 +168,18 @@ body {
 }
 
 /*-------------------feature--------------------*/
-.feature-div{
+.feature-div {
     display: flex;
     flex-direction: column;
 }
-.feature-list{
+.feature-list {
     display: flex;
-    justify-content: space-between;
 }
-.feature-item{
+.feature-item {
     max-width: 270px;
+}
+.feature-item:not(:last-child) {
+    margin-right: 30px;
 }
 .feature-pre-title {
     font-weight: 700;
@@ -200,18 +198,14 @@ body {
 }
 
 /*-------------What are we doing (study)------------*/
-.study{
-  padding-top: 0px;
+.study {
+    padding-top: 0px;
 }
-.study-div{
-    display: flex;
-    flex-direction: column;
-}
-.study-list{
+
+.study-list {
     display: flex;
     justify-content: space-between;
 }
-
 
 .study-title,
 .team-title {
@@ -223,29 +217,36 @@ body {
     color: var(--title-text-color);
     margin-bottom: 50px;
 }
-.study-item {
-    display: inline;
+
+.study-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*---------------------Our team (team)----------------------*/
 .team {
     background-color: var(--tertiary-background-color);
 }
-.study-div{
-    display: flex;
-    flex-direction: column;
-}
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    margin-left: -30px;
 }
+
 .team-item {
     width: 270px;
     background: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    flex-basis: calc(100% / 4-30px);
+    margin-left: 30px;
+}
+
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-pre-title {
@@ -255,7 +256,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -265,23 +265,25 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-bottom: 30px;
 }
 
 /*-------------------Footer--------------------*/
 
 .footer {
     background-color: var(--secondary-background-color);
-    max-width: 1600px;
-    padding-top: 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.footer-div{
-    display: flex;
-    flex-direction: column;
+.footer-address {
+    margin-top: 20px;
+}
+
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 /*-------------------Footer logo--------------------*/
-  .footer-logo{
+.footer-logo {
     color: var(--accent-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -289,21 +291,8 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
-    padding-top: 60px;
-    margin-bottom: 20px;
 }
 
-.footer-list{
-    display: flex;
-    flex-direction: column;
-}
-.footer-item{
-    margin-top: 9px;
-}
-
-.footer-address{
-    padding-bottom: 60px;
-}
 .footer-accent {
     font-family: 'Raleway';
     font-style: normal;
@@ -341,15 +330,15 @@ body {
 
 /*----------------- Portfolio-----------------------*/
 /*-------------------- button-----------------------*/
-.filter-button{
-    max-width: 611px;
+.filter-button {
     display: flex;
-    justify-content:space-between;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     margin-bottom: 50px;
-
 }
+.list-button-portfolio:not(:last-child) {
+    margin-left: 8px;
+}
+
 .filter-button-portfolio {
     background-color: var(--button-color);
     color: var(--title-text-color);
@@ -373,15 +362,18 @@ body {
 }
 
 /*--------------------Content----------------------*/
-.content-list{
+.content-list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.content-item{
-    width: 370px;
+
+.content-item-div {
     background: var(--primary-background-color);
-    border: 1px solid #EEEEEE;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 24px;
 }
 .content-pre-titel {
     font-weight: 700;
@@ -389,8 +381,6 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
-    padding-top: 20px;
-    padding-left: 24px;
     margin-bottom: 4px;
 }
 .content-text {
@@ -398,6 +388,4 @@ body {
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    padding-bottom: 20px;
-    padding-left: 24px;
 }
