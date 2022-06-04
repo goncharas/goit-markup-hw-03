@@ -8,6 +8,12 @@
     --button-color: #f5f4fa;
     --tertiary-background-color: #f5f4fa;
 }
+img{    
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
@@ -216,12 +222,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin-bottom: 50px;
-}
-
-.study-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
 }
 
 /*---------------------Our team (team)----------------------*/
